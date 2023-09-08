@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web App</title>
+</head>
+<body>
+    <h1>Simple Web App</h1>
+    <form method="POST">
+        <label for="user_input">Enter something:</label>
+        <input type="text" name="user_input" id="user_input" required>
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
